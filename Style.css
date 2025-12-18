@@ -1,0 +1,233 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    outline: 2px solid orange;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    font-kerning: normal;
+    letter-spacing: -0.8px;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* NAV SECTION */
+
+.Desktop-Nav {
+    display: flex;
+    position:sticky;
+    top: 0;
+    height: 6vh;
+    padding-left: 1rem; 
+    padding-right: 1rem;
+    justify-content: space-between;
+}
+
+.Logo-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Okx-Logo {
+   display: flex;
+   width: auto;
+   height: 24px;
+}
+
+.Divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slash-divider{
+    background: currentColor;
+    transform: rotate(-90deg);
+    color: rgb(70, 70, 70);
+    width: 16px;
+    height: 1px;
+}
+
+.Nav-Links li, .Nav-Login li, .Nav-Links a{
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.Nav-Links li {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+
+.Link-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Nav-Links {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.spacer{
+    width: 22rem;
+}
+
+/* SEARCH BAR */
+
+.Search-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Search-Bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgb(34, 34, 34);
+    border-radius: .4rem;
+    font-size: 12px;
+    padding: .6em;
+}
+
+input {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 12px;
+}
+
+.fa-solid {
+    color: rgb(120, 120, 120);
+    background: none;
+    margin-right:0.8em;
+}
+
+input:focus {
+    outline:none;
+    color: white;
+    caret-color: #adff2f;
+}
+
+input::placeholder {
+    color: rgb(70, 70, 70);
+}
+
+.Login-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LOGINS */
+
+.Nav-Login {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+}
+
+.login-btn a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.signup-btn a {
+    display: flex;
+    background: black;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    background: none;
+    padding: .3rem;
+    border-radius: .4rem;  
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.signup-btn a:hover{
+    display: flex;
+    border: 1px solid #ffffff;
+    color: white;
+}
+
+
+.Icon-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Nav-Icons {
+    display: flex;
+    width: auto;
+    height: 20px ;
+    gap: 1rem;
+}
+
+/* DROPDOWN MENU */
+
+.Dropdown-1{
+    display: none;
+    position: absolute;
+    justify-content:flex-start;
+} 
+
+
+.Dropdown-Items {
+    display:grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1-BS, .item2-P2P, .item3-CC {
+    background: none;
+    display: inline-flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center; 
+}
+
+.item1-BS img, .item2-P2P img , .item3-CC img {
+    background: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline;
+    height: 28px;
+    width: 28px;
+} 
+
+.Link-1:hover .Dropdown-1{
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
