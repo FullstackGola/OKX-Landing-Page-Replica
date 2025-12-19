@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     background-color: black;
-    outline: 2px solid orange;
+    /* outline: 2px solid orange; */
 }
 
 body{
@@ -40,7 +40,7 @@ html{
 .Okx-Logo {
    display: flex;
    width: auto;
-   height: 24px;
+   height: 22px;
 }
 
 .Divider {
@@ -198,32 +198,86 @@ input::placeholder {
     display: none;
     position: absolute;
     justify-content:flex-start;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-right: 1.2rem;
 } 
-
 
 .Dropdown-Items {
     display:grid;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: white;
+    width: 20em;
+    height: 20em;
+    border-radius: .4rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
 }
 
 .item1-BS, .item2-P2P, .item3-CC {
-    background: none;
     display: inline-flex;
     flex-direction: row;
-    justify-items: center;
-    align-items: center; 
+    justify-content:flex-start;
+    align-items: center;
+    background: none;
+    gap: .8rem;
+    width: 18em;
 }
 
 .item1-BS img, .item2-P2P img , .item3-CC img {
     background: none;
-    justify-content: flex-start;
-    align-items: flex-start;
-    display: inline;
-    height: 28px;
-    width: 28px;
+    padding-left: 1rem;
+    height: 24px;
+    width: 24px;
 } 
+
+.item1-BS a,strong,li {
+    background:none;
+    color: black;
+}
+
+.item2-P2P a,strong,li {
+    background:none;
+    color: black;
+}
+
+.item3-CC a,strong,li {
+    background:none;
+    color: black;
+}
+
+.item1-BS p, .item2-P2P p, .item3-CC p{
+    background: none;
+    color: #696969;
+    margin-top: .2rem; 
+    font-size: 10px;
+}
+
+.item1-BS strong, .item2-P2P strong, .item3-CC strong {
+    font-weight: 500 ;
+    font-size: 12px;
+}
+
+
+.item1-BS:hover{
+    background: rgb(244, 244, 244);
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+.item2-P2P:hover{
+    background: rgb(244, 244, 244);
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+.item3-CC:hover{
+    background: rgb(244, 244, 244);
+    border-radius: .2rem;
+    cursor: pointer;
+}
 
 .Link-1:hover .Dropdown-1{
     display: block;
@@ -231,3 +285,99 @@ input::placeholder {
     pointer-events: auto;
     transform: translateY(0);
 }
+
+/* DROPDOWN 2 */
+
+.Dropdown-2{
+    display: none;
+    position: absolute;
+    justify-content:flex-start;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+
+
+.Link-2:hover .Dropdown-2{
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+/* DROPDOWN 3 */
+
+.Dropdown-3 {
+    display: none ;
+    position: absolute;
+    justify-content:flex-start;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+
+
+.Link-3:hover .Dropdown-3 {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+/* DROPDOWN 4 */
+
+.Dropdown-4 {
+    display: none;
+    position: absolute;
+    justify-content: flex-start;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+.Link-4:hover .Dropdown-4 {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+/* DROPDOWN 5 */
+
+.Dropdown-5{
+    display: none;
+    position: absolute;
+    justify-content: flex-start;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+.Link-5:hover .Dropdown-5{
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+/* DROPDOWN-6 */
+
+.Dropdown-6{
+    display: none;
+    position: absolute;
+    justify-content: flex-start;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+.Link-6:hover .Dropdown-6{
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+
